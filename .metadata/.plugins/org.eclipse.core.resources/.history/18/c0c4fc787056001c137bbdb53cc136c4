@@ -1,0 +1,8 @@
+package modelo.dao;
+
+import java.math.BigDecimal;
+
+public interface IntVentaProduutosDao {
+	
+	BigDecimal precioTotal (Carrito);
+}

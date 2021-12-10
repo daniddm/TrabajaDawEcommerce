@@ -1,0 +1,11 @@
+package modelo.dao;
+
+import java.math.BigDecimal;
+
+import modelo.beans.Carrito;
+import modelo.beans.VentasProducto;
+
+public interface IntVentaProductoDao {
+	int altaVentasProducto(VentasProducto ventasProducto);
+	List<VentasProducto> findAll();
+}

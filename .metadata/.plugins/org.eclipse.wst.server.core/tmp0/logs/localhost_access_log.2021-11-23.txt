@@ -1,0 +1,12 @@
+127.0.0.1 - - [23/Nov/2021:19:00:11 +0100] "GET / HTTP/1.1" 404 687
+0:0:0:0:0:0:0:1 - - [23/Nov/2021:19:00:12 +0100] "GET /Ecommerce_SanTierno/vista/index.jsp HTTP/1.1" 200 3181
+0:0:0:0:0:0:0:1 - - [23/Nov/2021:19:00:12 +0100] "GET /Ecommerce_SanTierno/css/inicio.css HTTP/1.1" 200 2190
+0:0:0:0:0:0:0:1 - - [23/Nov/2021:19:00:12 +0100] "GET /Ecommerce_SanTierno/img/logo.PNG HTTP/1.1" 200 13159
+0:0:0:0:0:0:0:1 - - [23/Nov/2021:19:00:12 +0100] "GET /Ecommerce_SanTierno/js/validar.js HTTP/1.1" 200 645
+0:0:0:0:0:0:0:1 - - [23/Nov/2021:19:00:12 +0100] "GET /Ecommerce_SanTierno/img/dehesa.jpg HTTP/1.1" 200 481484
+0:0:0:0:0:0:0:1 - - [23/Nov/2021:20:02:02 +0100] "GET /Ecommerce_SanTierno/vista/index.jsp HTTP/1.1" 200 3181
+0:0:0:0:0:0:0:1 - - [23/Nov/2021:20:02:02 +0100] "GET /Ecommerce_SanTierno/css/inicio.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [23/Nov/2021:20:02:02 +0100] "GET /Ecommerce_SanTierno/js/validar.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [23/Nov/2021:20:02:03 +0100] "GET /Ecommerce_SanTierno/img/logo.PNG HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [23/Nov/2021:20:02:03 +0100] "GET /Ecommerce_SanTierno/img/dehesa.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [23/Nov/2021:20:02:29 +0100] "POST /Ecommerce_SanTierno/vista/Servlet?opcion=altaUsuario HTTP/1.1" 404 728

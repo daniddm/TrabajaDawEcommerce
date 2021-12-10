@@ -1,0 +1,16 @@
+package modelo.dao;
+
+
+
+import java.util.List;
+
+
+import modelo.beans.Venta;
+
+public interface IntVentaDao {
+	int altaVenta (Venta venta);
+	Venta findById(int idVenta);
+	int bajaVenta(Venta venta);
+	List<Venta> findByUsuario(int idUsuario);
+	
+}

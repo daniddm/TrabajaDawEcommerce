@@ -1,0 +1,14 @@
+package modelo.dao;
+
+import java.math.BigDecimal;
+
+import modelo.beans.Carrito;
+
+public class VentaProductoDaoImpl extends AbstracDao implements IntVentaProductoDao {
+
+	@Override
+	public BigDecimal precioTotal(BigDecimal precio) {
+		sql="Select c FROM Producto p WHERE "
+	}
+
+}

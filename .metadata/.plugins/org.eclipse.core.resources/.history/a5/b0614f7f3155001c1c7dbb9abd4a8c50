@@ -1,0 +1,6 @@
+package modelo.dao;
+
+public interface IntCategoriaDao {
+	List<Categoria> findAll ();
+
+}

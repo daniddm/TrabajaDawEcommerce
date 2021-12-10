@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+C:\Users\danie\Desktop\Proyecto.Eccomers\workspaceEcommer\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3599126661.index
+\Ecommerce_SanTierno\src
+C:\Users\danie\Desktop\Proyecto.Eccomers\workspaceEcommer\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3929740601.index
+\Ecommerce_SanTierno\src
+C:\Users\danie\Desktop\Proyecto.Eccomers\workspaceEcommer\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\185728199.index
+\E-commerce\src

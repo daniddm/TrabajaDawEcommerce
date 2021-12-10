@@ -1,0 +1,143 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+.contenedor {
+	width: 100%;
+	/*max-width: 1200px;*/
+	margin-right: auto;
+	margin-left: auto;
+}
+
+header {
+	padding: 40px 0;
+	background-image: url("img/ini.jpg");
+}
+header div.cabecera {
+	width: 100%; /* Establecemos que el ancho sera del 100% */
+	max-width:90%; /* Aqui le decimos que el ancho máximo sera de 90% */
+	margin:1%; /* Centramos los elementos */
+	overflow:hidden; /* Eliminamos errores de float */
+}
+
+header div.cabecera div.imagen {
+	width:50%;
+	float: left;
+}
+
+header div.cabecera div.imagen img{
+	width:20%;
+}
+
+header div.cabecera nav {
+	width:50%;
+	float:right;
+	line-height:20%;
+	margin-top: 2%;
+	text-align: right;
+    
+}
+
+header div.cabecera nav a {
+	display:inline-block;
+	color:#000000;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+
+header  div.cabecera nav a:hover {
+	background:#f56f3a;
+	border-radius:50px;
+    
+}
+
+header .logo {
+	margin-bottom: 40px 0;
+	text-align: center;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+header .form {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+/* trabajamos con flex y display para que los elmentos esten centardos */
+header .categorias {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	
+}
+/* damos estilos a los enlaces */
+header .categorias a {
+	color: #9B9B9B;
+	margin: 10px 20px;
+	font-size: 18px;
+	font-weight: 700;
+}
+/* el enlace tiene el color negro */
+header .categorias a.activo {
+	color: #000;
+	
+}
+
+header .barra-buscar {
+	width: 70%;
+	height: 40px;
+	line-height: 40px;
+	background: #fff;
+	padding: 0 20px;
+	border: solid 1px #808080;
+	border-radius: 100px;
+	font-size: 16px;
+}
+
+/*TRABAJO DE FOTOS */
+/**/
+.grid {
+	position: relative;
+	width: 100%;
+	opacity: 0; 
+	transition: opacity 0.5s linear 1s;
+  }
+
+.grid.imagenes-cargadas {/*añadimos esta clase para cargar todas las imagenes de golpe con JS*/
+	opacity: 1;
+}
+.grid .item {
+	position: absolute;/*posicion absoluto */
+	display: block;
+	padding: 0%;
+	margin: 10px;
+	width: calc(33.333% - 20px);/*cambiamos el tamaño de la imagen */
+	
+  }
+ 
+.grid .item-content {
+	position: relative;/*lo pide la libreria en la doc*/
+}
+.grid .item img {
+	cursor: pointer;
+	width: 100%; /*le doy un valor a la imgane del 100% asi pilla el 33.3 %*/
+	vertical-align: top;
+
+}
+

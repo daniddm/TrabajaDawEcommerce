@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
+<html>
+<head>
+<!-- ver enlace del bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+	<table border="1">	
+		<tr>
+			<th>Eliminar</th>
+			<th>Producto</th>
+			<th>Descripcion</th>
+			<th>Precio</th>
+			<th>Cantidad</th>
+			
+		</tr>
+		
+		<c:forEach var="car" items="${requestScope.carrito}" varStatus="in">
+		<tr>
+		  	
+		  	<td><a href="Servlet?opcion=borrarProducto&posi=${in.index}">Eliminar</a></td>
+		  	<td>${car.producto.nombre}</td>
+			<td>${car.producto.descripcion}</td>
+			<td>${car.producto.precio}</td>
+			<td>${car.cantidad}</td>
+			
+	 	</tr>
+		</c:forEach>
+	</table>
+	<a href="Servlet?opcion=confirmarCompra">Comprar</a>
+</body>
+</html>

@@ -1,0 +1,11 @@
+package modelo.dao;
+
+import modelo.beans.Carrito;
+
+
+public interface IntCarritoDao {
+
+	int altaCarrito (Carrito carrito);
+	Carrito findById(int CarritoPK);
+	int bajaCarrito (Carrito carrito);
+}

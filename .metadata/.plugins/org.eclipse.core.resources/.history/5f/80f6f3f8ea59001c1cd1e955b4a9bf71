@@ -1,0 +1,126 @@
+
+body {
+    
+    background-size: 100%;
+ }
+
+/*ponemos la caracteristicas para el HEADER  de la clase */
+header {
+	width:100%; /* Establecemos que el header abarque el 100% del documento */
+    height: 10%;
+	overflow:hidden; /* Eliminamos errores de float */
+	background: #ffffff;
+	margin-bottom:20px;
+}
+
+header div.cabecera {
+	width: 100%; /* Establecemos que el ancho sera del 100% */
+	max-width:90%; /* Aqui le decimos que el ancho máximo sera de 90% */
+	margin:1%; /* Centramos los elementos */
+	overflow:hidden; /* Eliminamos errores de float */
+}
+
+header div.cabecera div.imagen {
+	width:50%;
+	float: left;
+}
+
+header div.cabecera div.imagen img{
+	width:20%;
+}
+
+header div.cabecera nav {
+	width:50%;
+	float:right;
+	line-height:20%;
+	margin-top: 2%;
+	text-align: right;
+    
+}
+
+header div.cabecera nav a {
+	display:inline-block;
+	color:#000000;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+
+header  div.cabecera nav a:hover {
+	background:#f56f3a;
+	border-radius:50px;
+    
+}
+
+/*FORMULARIO DE REGISTRO*/
+
+section{
+	width: 60%;
+	float: left;
+	height: 100%;
+	
+
+}
+section img{
+	width: 100%;
+	height: 60%;
+	margin-left: 3%;
+}
+
+
+
+aside.registro {
+	float: right;
+	margin-right: 2%;
+	width: 30%;
+	
+}
+aside.registro div{
+	
+	width: 100%;
+	margin: 5% 5%;
+	text-align: center;
+	background: #ffffff;
+
+}
+
+
+/*ponemos la caracteristicas para la clase container */
+.container {
+    display:inline;
+    height: 100%;    
+}
+
+/*ponemos la caracteristicas para los inputs */
+form input {
+	
+    display: block;
+    width: 40%;
+    height: 200%;
+    margin: 3% 15%;
+	padding: 1%;
+}
+/*ponemos la caracteristicas para el formulario de login */
+#formLogin {
+    display: none;
+	width: 80%;
+	
+
+}
+/*ponemos la caracteristicas para el formulario de registro que salgo por defecto*/
+#formRegister {
+    display: block;
+	width: 80%;
+    
+}
+/*ponemos la caracteristicas para boton*/
+#login_button {
+    color: #f56f3a;
+	margin-left:20%;;
+}
+

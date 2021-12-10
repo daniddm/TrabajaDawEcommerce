@@ -1,0 +1,15 @@
+package modelo.dao;
+
+import java.util.List;
+
+import modelo.beans.Carrito;
+import modelo.beans.CarritoPK;
+
+
+public interface IntCarritoDao {
+
+	Carrito findById(int CarritoPK);
+	int bajaCarrito (Carrito carrito);
+	List<Carrito> findByAll();
+	Carrito altaCarrito (Carrito carrito);
+}

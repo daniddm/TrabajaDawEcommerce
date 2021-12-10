@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.persistence.Embedded"/>
+<fullyQualifiedTypeName name="javax.persistence.Embeddable"/>
+<fullyQualifiedTypeName name="javax.persistence.EmbeddedId"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="modelo.dao.IntUsuarioDao"/>
+<fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
+<fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
+<fullyQualifiedTypeName name="javax.persistence.EntityTransaction"/>
+<fullyQualifiedTypeName name="com.mysql.cj.Query"/>
+<fullyQualifiedTypeName name="javax.persistence.Persistence"/>
+<fullyQualifiedTypeName name="modelo.dao.IntPerfilDao"/>
+<fullyQualifiedTypeName name="modelo.beans.Perfile"/>
+<fullyQualifiedTypeName name="modelo.beans.Usuario"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="modelo.dao.AbstracDao"/>
+<fullyQualifiedTypeName name="modelo.dao.IntProductoDao"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="modelo.dao.PerfilDaoImpl"/>
+<fullyQualifiedTypeName name="java.lang.Boolean"/>
+<fullyQualifiedTypeName name="modelo.dao.IntCategoriaDao"/>
+<fullyQualifiedTypeName name="modelo.dao.CategoriaDaoImpl"/>
+<fullyQualifiedTypeName name="modelo.beans.Categoria"/>
+<fullyQualifiedTypeName name="modelo.beans.CarritoPK"/>
+<fullyQualifiedTypeName name="modelo.beans.Venta"/>
+<fullyQualifiedTypeName name="modelo.dao.UsuarioDaoImpl"/>
+<fullyQualifiedTypeName name="org.eclipse.persistence.jpa.jpql.parser.SumFunction"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="modelo.dao.IntVentaProductoDao"/>
+<fullyQualifiedTypeName name="modelo.dao.CarritoDaoImpl"/>
+<fullyQualifiedTypeName name="java.math.BigDecimal"/>
+<fullyQualifiedTypeName name="modelo.beans.VentasProducto"/>
+<fullyQualifiedTypeName name="modelo.beans.Carrito"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="modelo.dao.VentaDaoImpl"/>
+<fullyQualifiedTypeName name="modelo.dao.VentaProductoDaoImpl"/>
+<fullyQualifiedTypeName name="modelo.dao.ProductoDaoImpl"/>
+<fullyQualifiedTypeName name="modelo.beans.Producto"/>
+</qualifiedTypeNameHistroy>

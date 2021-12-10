@@ -1,0 +1,92 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@page import="modelo.beans.Usuario"%>  
+  <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Enlazamos el archivo css-->
+    <link href="css/inicio.css" rel="stylesheet" />
+	<!--Enlazamos bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!--Enlazamos jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!--Enlazamos JS-->
+    <script type="text/javascript" src="js/validar.js"></script>
+    <title>Inicio</title>
+</head>
+	
+	
+	
+	
+<body> <!--Cuerpo de la web-->
+
+    <header><!-- CAbecera de la web-->
+       <div class="CABECERA"> 
+			    
+                <div class="imagen">
+                    <img src="img/logo.PNG">
+                </div> 
+			<nav>
+				<a href="#">Inicio</a>
+				<a href="productos.jsp" action="Servlet?opcion=cargarProductosCategorias">Producto</a>
+				<a href="about.jsp">Quienes somos</a>
+				<a href="#">Contacto</a>
+			</nav>
+        </div>
+
+    </header>
+
+	<section><!--Enlazamos la imagen de la pagina principal-->
+		<div>
+			<img alt="" src="img/dehesa.jpg">
+		</div>
+	</section>
+	
+	<aside class="registro">  <!--pasamos con la zona del formulario-->
+		<div class="container">
+			<!--añadimos los button de las dos opciones-->
+			<button type="button" id="login_button" class="btn btn-outline-light me-2">Login</button>
+			<button type="button" id="register_button" class="btn btn-primary">Register</button>
+									
+			<!--fromulario de registro-->
+			<form id="formRegister" class="topBefore" action="Servlet?opcion=altaUsuario" method="post">
+				
+				<div class="form-group">
+					<label for="exampleInputEmail1">Introduce un Nombre</label>
+					<input id="nombre"class="form-control" type="text" placeholder="Nombre" name ="nombre">
+					<label for="exampleInputEmail1">Introduce un Apellido</label>
+					<input id="apellido"class="form-control" type="text" placeholder="Apellido" name ="apellido">
+					<label for="exampleInputEmail1">Correo electronico</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"name ="email">
+					<label for="exampleInputEmail1">Introduce una Contraseña </label>
+					<input id="contraseña"class="form-control" type="text" placeholder="Contraseña" name ="contraseña">
+					<button type="submit" class="btn btn-primary">Registrese</button>
+				</div>
+								
+
+			</form>
+			<!--fromulario de login-->
+			<form id="formLogin" class="topBefore" action="Servlet?opcion=login" method="post"action="Servlet?opcion=login" method="post">
+				<%String mensaje = (String)request.getAttribute("mensaje"); 
+                if (mensaje != null) {%>
+                    <h4><%=mensaje %></h4>
+            <%} %>
+				<div class="form-group">
+					<label for="exampleInputEmail1">Correo electronico</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name ="email">
+					<label for="exampleInputPassword1">Contraseña</label>
+					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name ="contraseña">
+					<button type="submit" class="btn btn-primary">Entrar</button>
+				</div>
+			</form>
+		</div>
+							
+	</aside>
+	</body>
+</html>

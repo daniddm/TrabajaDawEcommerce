@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\Users\danie\Desktop\Proyecto.Eccomers\workspaceEcommer\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1372148915.index
+3827486076.index
+442642447.index
+2104983202.index
+1800112959.index
+1511784655.index
+3599126661.index

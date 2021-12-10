@@ -1,0 +1,5 @@
+package modelo.dao;
+
+public VentaDaoImpl extends AbstracDao implements IntVentaDao {
+
+}

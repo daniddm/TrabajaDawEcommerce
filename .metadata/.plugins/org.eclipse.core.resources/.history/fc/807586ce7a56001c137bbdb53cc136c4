@@ -1,0 +1,17 @@
+package modelo.dao;
+
+import java.math.BigDecimal;
+
+import modelo.beans.Carrito;
+
+public class VentaProductoDaoImpl extends AbstracDao implements IntVentaProductoDao {
+
+	@Override
+	public BigDecimal precioTotal(BigDecimal precio) {
+		sql="SELECT c SUM(c.cantidad * p.precio) =: cod1 FROM Carrito c JOIN Producto p on p.idProducto = c.idProducto";
+		query = em.createQuery(sql); 
+		query.setParameter("cod1", precio);
+		return (BigDecimal) query.getSingleResult();
+	}
+
+}

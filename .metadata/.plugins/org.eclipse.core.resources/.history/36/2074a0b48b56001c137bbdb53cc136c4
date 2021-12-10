@@ -1,0 +1,54 @@
+package modelo.dao;
+
+import java.math.BigDecimal;
+import java.util.List;
+
+import modelo.beans.Venta;
+
+public class VentaDaoImpl extends AbstracDao implements IntVentaDao {
+
+	@Override
+	public int altaVenta(Venta venta) {
+		int filas = 0; 
+		try { 
+			tx.begin(); 
+			em.persist(venta); 
+			tx.commit(); 
+			filas = 1; 
+		} catch (Exception e) { 
+			e.printStackTrace();
+		} 
+		return filas; 
+	}
+
+	@Override
+	public Venta findById(int idVenta) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int bajaVenta(Venta venta) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<Venta> findByUsuario(int idUsuario) {
+		sql = "select v from Venta WHERE v.usuario.idUsuario  =:cod1";
+		query = em.createQuery(sql);
+		query.setParameter("cod1", idUsuario);
+		return query.getResultList();
+	}
+
+	@Override
+	public Venta calcularPrecioVenta (int idUsuario) {
+		sql = "SELECT SUM(c.cantidad * p.precio) FROM Carrito c LEFT JOIN Producto p on p.idProducto = c.idProducto WHERE c.idUsuario =:cod1";
+		query = em.createQuery(sql);
+		query.setParameter("cod1", idUsuario);
+		return (Venta) query.getSingleResult();
+	}
+
+
+}
